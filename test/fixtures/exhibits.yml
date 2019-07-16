@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  start_date: 2019-07-16
+  end_date: 2019-07-16
+  img_url: MyString
+  price: MyText
+  free: false
+  reception: false
+  reception_date: 2019-07-16
+  reception_start: 2019-07-16 17:22:40
+
+two:
+  name: MyString
+  start_date: 2019-07-16
+  end_date: 2019-07-16
+  img_url: MyString
+  price: MyText
+  free: false
+  reception: false
+  reception_date: 2019-07-16
+  reception_start: 2019-07-16 17:22:40

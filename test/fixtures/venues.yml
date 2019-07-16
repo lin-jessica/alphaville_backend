@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyString
+  phone: MyString
+  directions: MyString
+  neighborhood: MyString
+  opening_hour: 2019-07-16 17:17:26
+  closing_hour: 2019-07-16 17:17:26
+
+two:
+  name: MyString
+  address: MyString
+  phone: MyString
+  directions: MyString
+  neighborhood: MyString
+  opening_hour: 2019-07-16 17:17:26
+  closing_hour: 2019-07-16 17:17:26
