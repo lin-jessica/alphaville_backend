@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Api::V1::ListsController < ApplicationController
   def show
   end
 

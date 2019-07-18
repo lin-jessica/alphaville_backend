@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_16_220230) do
+ActiveRecord::Schema.define(version: 2019_07_17_214126) do
 
   create_table "exhibit_lists", force: :cascade do |t|
     t.integer "exhibit_id"
@@ -31,11 +31,12 @@ ActiveRecord::Schema.define(version: 2019_07_16_220230) do
     t.time "reception_start"
     t.time "reception_end"
     t.boolean "permanent"
-    t.integer "days_left"
     t.integer "venue_id"
     t.integer "author_user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "api_id"
+    t.text "description"
   end
 
   create_table "lists", force: :cascade do |t|
@@ -79,7 +80,6 @@ ActiveRecord::Schema.define(version: 2019_07_16_220230) do
 
   create_table "venues", force: :cascade do |t|
     t.string "name"
-    t.string "type"
     t.string "address"
     t.string "phone"
     t.string "directions"
@@ -95,10 +95,11 @@ ActiveRecord::Schema.define(version: 2019_07_16_220230) do
     t.boolean "open_sun"
     t.text "schedule_details"
     t.text "schedule_note"
-    t.decimal "latitude"
-    t.decimal "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "kind"
+    t.decimal "latitude", precision: 10, scale: 6
+    t.decimal "longitude", precision: 10, scale: 6
   end
 
 end
