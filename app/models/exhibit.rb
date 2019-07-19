@@ -30,4 +30,16 @@ class Exhibit < ApplicationRecord
   has_many :user_saved_exhibits
   has_many :users, through: :user_saved_exhibits
 
+  def venue_name
+    self.venue.name
+  end
+
+  def venue_latitude
+    self.venue.latitude
+  end
+
+  def venue_longitude
+    self.venue.longitude
+  end
+
 end
