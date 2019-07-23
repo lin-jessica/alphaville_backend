@@ -1,6 +1,11 @@
 class Api::V1::UsersController < ApplicationController
   before_action :find_user, only: %i[show edit update destroy]
 
+  def index
+    @users = User.all
+    render json: @users
+  end
+  
   def show
     render json: @user
   end
@@ -10,13 +15,13 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def create
-    # @user = User.new(username: params[:username], password: params[:password])
-    # if @user.valid?
-    #   @user.save
-    #   render json: @user
-    # else
-    #   render json: { errors: 'Something went wrong' }
-    # end
+    @user = User.new(email: params[:email], first_name: params[:first_name], last_name: params[:last_name])
+    if @user.valid?
+      @user.save
+      render json: @user
+    else
+      render json: { errors: 'Something went wrong' }
+    end
   end
 
   def edit
