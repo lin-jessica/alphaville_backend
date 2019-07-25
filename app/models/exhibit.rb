@@ -42,4 +42,8 @@ class Exhibit < ApplicationRecord
     self.venue.longitude
   end
 
+  def venue_neighborhood
+    self.venue.neighborhood
+  end
+
 end
