@@ -46,4 +46,8 @@ class Exhibit < ApplicationRecord
     self.venue.neighborhood
   end
 
+  def venue_phone
+    self.venue.phone
+  end
+
 end
