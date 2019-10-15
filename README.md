@@ -1,4 +1,4 @@
-# Alphaville Back End
+# Alphaville
 A mobile app to browse and save current NYC art exhibitions 
 based on your current location, or through filters like popular and free.<br><br>
 
