@@ -1,24 +1,35 @@
-# README
+# Alphaville Back End
+A mobile app to browse and save current NYC art exhibitions 
+based on your current location, or through filters like popular and free.<br><br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started<br>
+### Prerequisite
+Front end repository built on Rails available 
+[here](https://github.com/lin-jessica/alphaville).<br><br>
 
-Things you may want to cover:
+### Installing
+#### Back End
+1. Download [ngrok](https://ngrok.com/) to expose local server to the public 
+internet over secure tunnels.<br>
 
-* Ruby version
+2. Start Rails server, with OSX & Linux: `rails s`.
 
-* System dependencies
+3. Start ngrok session, with OSX & Linux: `./ngrok http 3000`.<br>
 
-* Configuration
+#### Front End
+1. Copy the forwarding HTTPS URL from ngrok, and set `const ngrokUrl` to this new address.<br>
+Located here: `/alphaville/src/ngrok.js`
 
-* Database creation
+2. Download [expo.io](https://expo.io) to display the interface by rendering an iOS simulation on 
+your desktop, or through the expo app on your phone.
 
-* Database initialization
+3. Start expo project with `expo start`.
 
-* How to run the test suite
+4. Choose to run the simulation as an option from the browser, or your scan the generated QR code 
+with your smart phone to open up the app from expo mobile.<br><br>
 
-* Services (job queues, cache servers, search engines, etc.)
+### Built With
+[React Native](https://facebook.github.io/react-native/) - Mobile Interface<br>
+[Ruby on Rails](https://rubyonrails.org/) - Server Framework<br>
 
-* Deployment instructions
-
-* ...
+Learned React Native and built this app within two weeks.
